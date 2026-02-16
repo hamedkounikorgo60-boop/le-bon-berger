@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Membres – Le Bon Berger</title>
+  <link rel="stylesheet" href="membre.css">
+  <link rel="stylesheet" href="membre.js">
+
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">Le Bon Berger</div>
+
+  <nav class="nav-links">
+    <a href="index.html">Accueil</a>
+    <a href="about.html">À propos</a>
+    <a href="programme.html">Programmes</a>
+    <a href="contact.html">Contact</a>
+    <a href="membres.html" class="active">Membres</a>
+    <button id="darkModeBtn">🌙</button>
+  </nav>
+</header>
+
+
+
+
+<section class="member-section">
+  <div class="member-card">
+    <h2>Inscription Membre</h2>
+
+    <form id="memberForm">
+      <input type="text" placeholder="Nom" required>
+      <input type="text" placeholder="Prénom" required>
+      <input type="email" placeholder="Email" required>
+      <input type="tel" placeholder="Téléphone" required>
+      <input type="text" placeholder="Profession / Domaine d’étude">
+      <textarea placeholder="Remarques / Suggestions / Idées"></textarea>
+
+      <button type="submit">S’inscrire</button>
+    </form>
+  </div>
+</section>
+
+<!-- <form id="membre-form">
+  <input type="text" name="nom" placeholder="Nom" required>
+  <input type="text" name="prenom" placeholder="Prénom" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <input type="tel" name="telephone" placeholder="Téléphone" required>
+  <input type="text" name="profession" placeholder="Profession / Domaine d'étude">
+  <textarea name="message" placeholder="Remarque / Suggestion"></textarea> -->
+
+  <!-- CODE MEMBRE (auto) 
+  <input type="text" name="code_membre" id="code_membre" readonly>
+
+  <button type="submit">Devenir membre</button>
+</form>  -->
+
+<input type="file" id="photo" accept="image/*" required>
+
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="js/membres.js"></script>
+
+
+
+<footer class="footer">
+  <p>© 2026 Le Bon Berger — Tous droits réservés</p>
+</footer>
+
+</body>
+</html>
